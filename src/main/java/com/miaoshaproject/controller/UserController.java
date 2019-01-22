@@ -32,7 +32,7 @@ import java.util.Random;
 @CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
 public class UserController extends BaseController {
 
-//    @Autowired
+    @Autowired
     private UserService userService;
 
     @Autowired
