@@ -126,8 +126,7 @@ public class UserController extends BaseController {
         UserModel userModel = userService.getUserById(id);
 
         if (userModel == null) {
-//            throw new BusinessException(EmBusinessError.USER_NOT_EXIST);
-            userModel.setEncrptPassword("123");
+            throw new BusinessException(EmBusinessError.USER_NOT_EXIST);
         }
 
         // 将核心领域模型用户对象转化为可供UI使用的viewobject
